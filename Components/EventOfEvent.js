@@ -16,46 +16,26 @@ const SectionDetails= styled.View`
 
 
 const EventOfEvent= ({navigation,route}) => {
-    const [car,setCar] = useState(null)
     const [event,setEvent] = useState(null)
 
-
-    function isfromMyEvent() {
-        return (route.name === "My events");
-    }
     useEffect(() => {
-        console.log(route.params.event[1]);
         setEvent(route.params.event[1]);
 
         return function cleanup() {
             setEvent(null)
-            console.log("cleanup")
         };
     }, [!event]);
 
 
-    function confirmDelete() {
-        console.log("test")
-        if(Platform.OS ==='ios' || Platform.OS ==='android'){
-            Alert.alert('Are you sure?', 'Do you want to delete the car?', [
-                { text: 'Cancel', style: 'cancel' },
-                // Vi bruger this.handleDelete som eventHandler til onPress
-                { text: 'Delete', style: 'destructive', onPress: () => handleDelete() },
-            ]);
-        }
-    }
     function handleEdit() {
         const event = route.params.event
-        console.log(event);
         navigation.navigate('Edit event', {event});
-        console.log("HandleEdit");
 
     }
     if(event == null)
     {
         return <Text>event is null </Text>
     }
-    console.log(event);
     return (
         <View style={styles.container}>
             <SectionDetails>

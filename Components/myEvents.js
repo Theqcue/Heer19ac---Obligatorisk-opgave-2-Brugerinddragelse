@@ -15,7 +15,6 @@ const myEvents= ({navigation}) => {
             .on('value', snapshot => {
                 setEvents(snapshot.val())
             });
-        console.log(events)
         if(!events)
         {
             Alert.alert("No events found please add new event")

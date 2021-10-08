@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7478e8bb-dbd2-472d-90ca-a04b507622e5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/Add_edit_Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/Add_Edit_Event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/CarDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/Components/EventOfEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/EventsOverviewScreen.js" beforeDir="false" />
-    </list>
+    <list default="true" id="7478e8bb-dbd2-472d-90ca-a04b507622e5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +47,7 @@
       <workItem from="1633619382617" duration="1504000" />
       <workItem from="1633701902729" duration="575000" />
       <workItem from="1633706015628" duration="1893000" />
+      <workItem from="1633717072299" duration="12000" />
     </task>
     <servers />
   </component>

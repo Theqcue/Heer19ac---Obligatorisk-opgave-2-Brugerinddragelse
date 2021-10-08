@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import firebase from 'firebase';
-import CarList from './Components/CarList'
+import ListOfEvents from './Components/ListOfEvents'
 import EventOfEvent from './Components/EventOfEvent'
 import Add_Edit_Event from './Components/Add_Edit_Event'
 import { createStackNavigator } from '@react-navigation/stack';
@@ -35,7 +35,7 @@ export default function App() {
     function stackNavigator() {
         return(
             <Stack.Navigator style={{backgroundColor: '#2c959e'}}>
-                <Stack.Screen name="List of Events" component={CarList} options={{
+                <Stack.Screen name="List of Events" component={ListOfEvents} options={{
                     title: 'List of Events',
                     headerStyle: {
                         backgroundColor: '#2c959e',

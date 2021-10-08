@@ -4,7 +4,7 @@ import {FlatList, StyleSheet, Text, View, Image} from 'react-native';
 import firebase from "firebase";
 import {TouchableOpacity} from "react-native-gesture-handler";
 
-const CarList= ({navigation}) => {
+const ListOfEvents= ({navigation}) => {
     const [cars,setCars] = useState([])
     const [events,setEvents] = useState([])
     const [image,setImage] = useState('')
@@ -77,4 +77,4 @@ const styles = StyleSheet.create({
         fontFamily:'monospace',
     },
 });
-export default CarList;
+export default ListOfEvents;

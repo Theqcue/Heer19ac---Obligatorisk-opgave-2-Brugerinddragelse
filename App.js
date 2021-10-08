@@ -3,14 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import firebase from 'firebase';
 import CarList from './Components/CarList'
-import CarDetails from './Components/CarDetails'
-import Add_edit_Car from './Components/Add_edit_Car'
+import EventOfEvent from './Components/EventOfEvent'
+import Add_Edit_Event from './Components/Add_Edit_Event'
 import { createStackNavigator } from '@react-navigation/stack';
 import {NavigationContainer} from "@react-navigation/native";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from "react-native-vector-icons/Ionicons";
-import EventsOverviewScreen from "./Components/EventsOverviewScreen";
-import EventDetailScreen from "./Components/EventDetailScreen";
+
 import myEvents from "./Components/myEvents";
 export default function App() {
 
@@ -46,7 +45,7 @@ export default function App() {
                         fontWeight: 'bold',
                     },
                 }}/>
-                <Stack.Screen name="CarDetails" component={CarDetails} options={{
+                <Stack.Screen name="CarDetails" component={EventOfEvent} options={{
                     title: 'Details',
                     headerStyle: {
                         backgroundColor: '#2c959e',
@@ -57,7 +56,7 @@ export default function App() {
                     },
                 }}/>
 
-                <Stack.Screen name="Edit event" component={Add_edit_Car} options={{
+                <Stack.Screen name="Edit event" component={Add_Edit_Event} options={{
                     title: 'Edit Events',
                     headerStyle: {
                         backgroundColor: '#2c959e',
@@ -100,7 +99,7 @@ export default function App() {
     function stackNavigatorCreateEvent() {
         return(
             <Stack.Navigator style={{backgroundColor: '#2c959e'}}>
-                <Stack.Screen name="Add cars" component={Add_edit_Car} options={{
+                <Stack.Screen name="Add cars" component={Add_Edit_Event} options={{
                     title: 'Create a new event',
                     headerStyle: {
                         backgroundColor: '#2c959e',

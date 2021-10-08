@@ -6,7 +6,7 @@ import {ScrollView} from "react-native-gesture-handler";
 import firebase from "firebase";
 import ImagePicker from 'react-native-image-picker';
 
-const Add_edit_Car = ({navigation,route}) => {
+const Add_Edit_Event = ({navigation,route}) => {
     const initialStateEvent = { type: '', title: '', startingTime: '', image: '',desc:'',user:'' }
     const [newEvent,setNewEvent] = useState(initialStateEvent)
 
@@ -66,14 +66,14 @@ const Add_edit_Car = ({navigation,route}) => {
                         user: newEvent.user,
                     });
 
-                    Alert.alert(`Saved edit car`);
+                    Alert.alert(`Dit event er opdateret`);
                     setNewEvent(initialStateEvent)
                 } else {
                     firebase
                         .database()
                         .ref('/Event/')
                         .push({type, title, startingTime, image, desc, user});
-                    Alert.alert(`Saved`);
+                    Alert.alert(`Dit event er gemt`);
                     setNewEvent(initialStateEvent)
                 }
             } catch (error) {
@@ -169,4 +169,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Add_edit_Car;
+export default Add_Edit_Event;

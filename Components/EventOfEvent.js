@@ -15,7 +15,7 @@ const SectionDetails= styled.View`
 `;
 
 
-const CarDetails= ({navigation,route}) => {
+const EventOfEvent= ({navigation,route}) => {
     const [car,setCar] = useState(null)
     const [event,setEvent] = useState(null)
 
@@ -97,4 +97,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default CarDetails;
+export default EventOfEvent;

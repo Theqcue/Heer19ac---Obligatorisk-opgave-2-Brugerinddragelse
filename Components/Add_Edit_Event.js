@@ -4,44 +4,37 @@ import {StyleSheet, Text, View, TextInput, Button, Alert} from 'react-native';
 import {SafeAreaView} from "react-native";
 import {ScrollView} from "react-native-gesture-handler";
 import firebase from "firebase";
-import ImagePicker from 'react-native-image-picker';
 
 const Add_Edit_Event = ({navigation,route}) => {
+    //TODO: Add more fields, fx. Keywords and others to the database
     const initialStateEvent = { type: '', title: '', startingTime: '', image: '',desc:'',user:'' }
     const [newEvent,setNewEvent] = useState(initialStateEvent)
 
-
+//Checks if the navigation comes from the edit event or the add event.
     function isEditEvent() {
         return (route.name === "Edit event");
     }
-
-
+    //Updates status
     const changeTextInputEvent = (name,event) => {
         setNewEvent({...newEvent, [name]: event});
     }
-
+//Fills out the fields with the values from the event -> only when comes from edit
     useEffect(() => {
-        console.log(isEditEvent());
         if(isEditEvent())
         {
-            console.log(route.params.event[1]);
             const event = route.params.event[1];
             setNewEvent(event)
-            console.log("newEvent" + newEvent);
-            console.log("type1" + newEvent.type);
-
             return() => {
-                //setNewEvent(initialStateEvent);
+                setNewEvent(initialStateEvent);
             }
         }
     }, []);
 
-
+//Save to Firebase
     function handleSave() {
-        console.log("HandleSave?");
-        newEvent.user = '1'; //Will be changed to the logged in user
+        newEvent.user = '1'; //TODO: change to the logged in user
         const {type, title, startingTime, image, desc,user} = newEvent;
-
+    //Make sure that empty fields does not get saved.
         if (type.length === 0) {
             Alert.alert("type name is missing")
         } else if (title.length === 0) {
@@ -56,6 +49,7 @@ const Add_Edit_Event = ({navigation,route}) => {
 
             try {
                 if (isEditEvent()) {
+                    //Update the event if edit event
                     const rpc = route.params.event[0]
                     firebase.database().ref('/Event/'+rpc).set({
                         type: newEvent.type,
@@ -69,6 +63,7 @@ const Add_Edit_Event = ({navigation,route}) => {
                     Alert.alert(`Dit event er opdateret`);
                     setNewEvent(initialStateEvent)
                 } else {
+                    //Create the event
                     firebase
                         .database()
                         .ref('/Event/')
@@ -82,7 +77,7 @@ const Add_Edit_Event = ({navigation,route}) => {
 
         }
     }
-    console.log("Type:" + newEvent.type)
+    //Create the textinput that the user can create the event with
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -125,13 +120,8 @@ const Add_Edit_Event = ({navigation,route}) => {
         </SafeAreaView>
     )
 }
-/*
 
-                <B
-
-*            <Button onSubmit={handleSave()}> Add car</Button>
-*/
-
+//TODO: Create better styling
 const styles = StyleSheet.create({
     container: {
         flex: 1,

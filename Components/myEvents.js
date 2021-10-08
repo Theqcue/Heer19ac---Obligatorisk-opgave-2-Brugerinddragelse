@@ -6,9 +6,9 @@ import {TouchableOpacity} from "react-native-gesture-handler";
 
 const myEvents= ({navigation}) => {
     const [events,setEvents] = useState([])
-
+//Get all events
+    //TODO: Change with current user
     useEffect(() => {
-        console.log("user1!");
         firebase
             .database()
             .ref('/Event').orderByChild("user").equalTo('1') //change based on the user, when login is made
@@ -26,8 +26,7 @@ const myEvents= ({navigation}) => {
 
     const handleSelectEvent = id => {
         const event = Object.entries(events).find( car => car[0] === id /*id*/)
-        navigation.navigate('CarDetails', {event});
-        console.log("SelectEvent!");
+        navigation.navigate('EventDetails', {event});
     }
     let eventsArray =[]
     let eventsKeys = []
@@ -35,7 +34,6 @@ const myEvents= ({navigation}) => {
         eventsArray = Object.values(events);
         eventsKeys = Object.keys(events);
     }
-    console.log("Before return");
     return (
         <View style={styles.container}>
             {(eventsArray.length===0)

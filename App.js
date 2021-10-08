@@ -13,7 +13,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import myEvents from "./Components/myEvents";
 export default function App() {
 
-// Your web app's Firebase configuration
+// Firebase configuration
     const firebaseConfig = {
         apiKey: "AIzaSyBvl7ph8mETPzixy5KPhmw9maysyTbP7Ks",
         authDomain: "mandatory-activity-2-4a42a.firebaseapp.com",
@@ -31,7 +31,7 @@ export default function App() {
 
     const Stack = createStackNavigator();
     const Tab = createBottomTabNavigator();
-
+//Create Stack navigator
     function stackNavigator() {
         return(
             <Stack.Navigator style={{backgroundColor: '#2c959e'}}>
@@ -45,7 +45,7 @@ export default function App() {
                         fontWeight: 'bold',
                     },
                 }}/>
-                <Stack.Screen name="CarDetails" component={EventOfEvent} options={{
+                <Stack.Screen name="EventDetails" component={EventOfEvent} options={{
                     title: 'Details',
                     headerStyle: {
                         backgroundColor: '#2c959e',
@@ -79,7 +79,7 @@ export default function App() {
             </Stack.Navigator>
 
         );}
-
+//Create Stack navigator for My events
     function stackNavigatorMyEvents() {
         return(
             <Stack.Navigator style={{backgroundColor: '#2c959e'}}>
@@ -95,11 +95,11 @@ export default function App() {
                 }}/>
             </Stack.Navigator>
         );}
-
+//Create Stack navigator for Created events
     function stackNavigatorCreateEvent() {
         return(
             <Stack.Navigator style={{backgroundColor: '#2c959e'}}>
-                <Stack.Screen name="Add cars" component={Add_Edit_Event} options={{
+                <Stack.Screen name="Add event" component={Add_Edit_Event} options={{
                     title: 'Create a new event',
                     headerStyle: {
                         backgroundColor: '#2c959e',
@@ -111,6 +111,8 @@ export default function App() {
                 }}/>
             </Stack.Navigator>
         );}
+    //Creating the bottom Tab, with the correct Stack Navigators.
+    //TODO: Create component with the different Stack navigators for overview
     return (
         <View style={styles.container}>
             <NavigationContainer style={styles.tab}>

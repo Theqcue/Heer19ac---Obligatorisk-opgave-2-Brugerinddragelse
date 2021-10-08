@@ -72,20 +72,7 @@ const EventOfEvent= ({navigation,route}) => {
 
     )
 }
-/*
-*           <Button onPress={handleEdit} title={"Edit"}/>
-            <Button onPress={confirmDelete} title={"Confirm Delete"}/>
-            *
-            * {
-                Object.entries(event).map((item,index)=>{
-                    return(
-                        <View style={styles.label} key={index}>
-                            <Text >{item[1]}</Text>
-                        </View>
-                    )
-                })
-            }
-* */
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,

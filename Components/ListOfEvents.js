@@ -5,12 +5,9 @@ import firebase from "firebase";
 import {TouchableOpacity} from "react-native-gesture-handler";
 
 const ListOfEvents= ({navigation}) => {
-    const [cars,setCars] = useState([])
     const [events,setEvents] = useState([])
-    const [image,setImage] = useState('')
-
+//Get all events from database
     useEffect(() => {
-        console.log("Effect1!");
             firebase
                 .database()
                 .ref('/Event')
@@ -24,16 +21,15 @@ const ListOfEvents= ({navigation}) => {
 
         //};
     }, [!events]);
-
+//Navigate to event details
     const handleSelectEvent = id => {
         const event = Object.entries(events).find( car => car[0] === id /*id*/)
-        navigation.navigate('CarDetails', {event});
-        console.log("SelectEvent!");
+        navigation.navigate('EventDetails', {event});
     }
 
     const eventsArray = Object.values(events);
     const eventsKeys = Object.keys(events);
-    console.log("Before return");
+    //Load all the events in database
     return (
         <View style={styles.container}>
             {(eventsArray.length===0)

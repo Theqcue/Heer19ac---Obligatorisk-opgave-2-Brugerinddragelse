@@ -1,44 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d5ef826-f124-4162-bbe8-77e38b701a0c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MandatoryApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/MandatoryApp/package.json" afterDir="false" />
+    <list default="true" id="7478e8bb-dbd2-472d-90ca-a04b507622e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.expo-shared/assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MandatoryApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/Add_edit_Car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/CarDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/CarList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/EventDetailScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/EventsOverviewScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/myEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/adaptive-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp" beforeDir="false" afterPath="$PROJECT_DIR$/MandatoryApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/.expo-shared/assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/.idea/MandatoryApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/Components/Add_edit_Car.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/Components/CarDetails.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/Components/CarList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/Components/EventDetailScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/Components/EventsOverviewScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/Components/myEvents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MandatoryApp/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1ywmlGhDLZpOlIIkmpinNHjRqcq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ywnoPRMHmpHHTXjtbYPM2QinIO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MandatoryApp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d5ef826-f124-4162-bbe8-77e38b701a0c" name="Changes" comment="" />
-      <created>1633171173680</created>
+      <changelist id="7478e8bb-dbd2-472d-90ca-a04b507622e5" name="Changes" comment="" />
+      <created>1633171692320</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1633171173680</updated>
-      <workItem from="1633171175077" duration="513000" />
+      <updated>1633171692320</updated>
+      <workItem from="1633171693690" duration="26806000" />
+      <workItem from="1633347632485" duration="5449000" />
+      <workItem from="1633619382617" duration="1504000" />
+      <workItem from="1633701902729" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
